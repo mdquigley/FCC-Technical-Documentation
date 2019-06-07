@@ -1,0 +1,66 @@
+/*
+Color Palette
+
+#def0ee
+
+
+
+ */
+
+
+body {
+  min-height: 100vh;
+  max-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  font-family: 'Raleway', sans-serif;
+}
+#navbar {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 200px;
+  background-color: #def0ee;
+  padding-top: 10px;
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  border-right: 1px solid black;
+}
+#navbar > header {
+  font-weight: bold;
+  font-size: 1.2em;
+  text-align: right;
+  padding-bottom: 10px;
+  padding-right: 10px;
+}
+#navbar > a {
+  border-top: 1px solid black;
+  text-align: center;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  /* flex-shrink: 1; */
+}
+#navbar > a:last-child {
+  flex-grow: 1;
+
+}
+#main-doc {
+  margin-left: 225px;
+  padding-top: 20px;
+}
+.main-section > header {
+  font-size: 1.1em;
+  font-weight: bold;
+}
+.main-section > p {
+  padding-left: 15px;
+}
+.main-section > p > code {
+  padding-left: 50px;
+  font-size: 1.1em;
+}
+.main-section li {
+  font-size: 0.9em;
+}
