@@ -86,7 +86,7 @@ a:hover {
   color: #ff496c;
 }
 
-@media (max-width: 751px) {
+@media (max-width: 800px) {
   #navbar {
     width: 100%;
     height: auto;
