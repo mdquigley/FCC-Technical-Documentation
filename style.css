@@ -2,7 +2,9 @@
 Color Palette
 
 #def0ee
-
+#ff496c - pink
+#ffffee - yellow
+#000080 - navy
 
 
  */
@@ -13,7 +15,7 @@ body {
   max-height: 100vh;
   display: flex;
   flex-direction: row;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Work Sans', sans-serif;
 }
 #navbar {
   position: fixed;
@@ -21,7 +23,7 @@ body {
   left: 0px;
   height: 100%;
   width: 200px;
-  background-color: #def0ee;
+  background-color: #ffffee;
   padding-top: 10px;
   display: flex;
   flex-direction:column;
@@ -32,7 +34,7 @@ body {
   font-weight: bold;
   font-size: 1.2em;
   text-align: right;
-  padding-bottom: 10px;
+  padding-bottom: 5px;
   padding-right: 10px;
 }
 #navbar > a {
@@ -44,23 +46,75 @@ body {
 }
 #navbar > a:last-child {
   flex-grow: 1;
-
 }
 #main-doc {
   margin-left: 225px;
   padding-top: 20px;
 }
 .main-section > header {
-  font-size: 1.1em;
+  font-size: 1.3em;
   font-weight: bold;
 }
 .main-section > p {
   padding-left: 15px;
 }
-.main-section > p > code {
-  padding-left: 50px;
-  font-size: 1.1em;
+.main-section > p > code, code>pre {
+  /* padding-left: 25%; */
+  margin-left: 25%;
+  padding: 5px;
+  font-size: 1.5em;
+  background-color: rgba(10, 10, 96, 0.15);
+  border-radius: 10px;
+  display: inline-block;
 }
+
 .main-section li {
   font-size: 0.9em;
+}
+
+a, a:visited {
+  text-decoration: none;
+  color: #000080;
+  font-weight: bold;
+}
+a:hover {
+  color: #ff496c;
+}
+
+@media (max-width: 600px) {
+  /* #navbar {
+    left: -200px;
+  }
+  #navbar:hover {
+    left: 0px;
+  } */
+  #navbar {
+    /* display: grid; */
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    background-color: red;
+    text-align: justify;
+    justify-content: flex-start;
+    /* flex-wrap: wrap; */
+  }
+  #navbar > header {
+    /* grid-area: 1 / 1 / 2 / 4; */
+    /* text-align: inherit; */
+    background-color: blue;
+  }
+  #navbar > a {
+    margin: 0;
+    padding: 0;
+    padding-right: 5px;
+    border: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+    width: 10%;
+    background-color: blue;
+    
+  }
+  #main-doc {
+    margin-left: 0px;
+  }
 }
