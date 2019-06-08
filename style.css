@@ -129,6 +129,6 @@ a:hover {
 
 @media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (-webkit-device-pixel-ratio: 2) {
   #main-doc {
-    margin-top: 420px;
+    margin-top: 500px;
   }
 }
